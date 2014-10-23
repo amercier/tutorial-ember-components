@@ -6,5 +6,5 @@ gulp.task('default', function () {
   gulp.src('./templates/**/*.{handlebars,hbs}')
     .pipe(emberTemplates())
     .pipe(concat('templates.js'))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./js/dist'));
 });
