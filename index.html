@@ -7,13 +7,13 @@
   <body>
     <script type="text/x-handlebars" data-template-name="index">
       {{#each}}
-        {{blog-post}}
+        {{blog-post title=title body=body}}
       {{/each}}
     </script>
     
     <script type="text/x-handlebars" data-template-name="components/blog-post">
-      <h1>Blog Post</h1>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <h1>Component: {{title}}</h1>
+      <p>{{body}}</p>
     </script>
 
     <script src="js/libs/jquery/dist/jquery.js"></script>
