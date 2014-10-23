@@ -3,11 +3,11 @@ App.Router.map(function() {
 });
 
 posts = [{
-  title: "Rails is omakase",
-  body: "There are lots of à la carte software environments in this world."
+  name: "Rails is omakase",
+  description: "There are lots of à la carte software environments in this world."
 }, {
-  title: "Broken Promises",
-  body: "James Coglan wrote a lengthy article about Promises in node.js."
+  name: "Broken Promises",
+  description: "James Coglan wrote a lengthy article about Promises in node.js."
 }];
 
 App.IndexRoute = Ember.Route.extend({
