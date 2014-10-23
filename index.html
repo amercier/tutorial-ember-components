@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>Ember.js • TodoMVC</title>
+  </head>
+  <body>
+    <script type="text/x-handlebars" data-template-name="index">
+      {{#each}}
+        {{blog-post}}
+      {{/each}}
+    </script>
+    
+    <script type="text/x-handlebars" data-template-name="components/blog-post">
+      <h1>Blog Post</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </script>
+
+    <script src="js/libs/jquery/dist/jquery.js"></script>
+    <script src="js/libs/handlebars/handlebars.js"></script>
+    <script src="js/libs/ember/ember.js"></script>
+    <script src="js/libs/ember-data/ember-data.js"></script>
+    <script src="js/libs/ember-localstorage-adapter/localstorage_adapter.js"></script>
+
+    <script src="js/application.js"></script>
+    <script src="js/router.js"></script>
+  </body>
+</html>
