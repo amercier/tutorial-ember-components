@@ -7,13 +7,18 @@
   <body>
     <script type="text/x-handlebars" data-template-name="index">
       {{#each}}
-        {{blog-post title=name body=description}}
+        {{#blog-post title=name}}
+          <p class="author">by {{author}}</p>
+          {{description}}
+        {{/blog-post}}
       {{/each}}
     </script>
     
     <script type="text/x-handlebars" data-template-name="components/blog-post">
       <h1>Component: {{title}}</h1>
-      <p>{{body}}</p>
+      <div class="body">
+        {{yield}}
+      </div>
     </script>
 
     <script src="js/libs/jquery/dist/jquery.js"></script>
